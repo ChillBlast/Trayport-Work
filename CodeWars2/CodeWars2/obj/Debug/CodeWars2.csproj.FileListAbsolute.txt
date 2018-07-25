@@ -1,0 +1,11 @@
+C:\Users\amirs\source\repos\CodeWars2\CodeWars2\bin\Debug\CodeWars2.exe.config
+C:\Users\amirs\source\repos\CodeWars2\CodeWars2\bin\Debug\CodeWars2.exe
+C:\Users\amirs\source\repos\CodeWars2\CodeWars2\bin\Debug\CodeWars2.pdb
+C:\Users\amirs\source\repos\CodeWars2\CodeWars2\obj\Debug\CodeWars2.csprojAssemblyReference.cache
+C:\Users\amirs\source\repos\CodeWars2\CodeWars2\obj\Debug\CodeWars2.csproj.CoreCompileInputs.cache
+C:\Users\amirs\source\repos\CodeWars2\CodeWars2\obj\Debug\CodeWars2.exe
+C:\Users\amirs\source\repos\CodeWars2\CodeWars2\obj\Debug\CodeWars2.pdb
+C:\Users\amirs\source\repos\CodeWars2\CodeWars2\bin\Debug\nunit.framework.dll
+C:\Users\amirs\source\repos\CodeWars2\CodeWars2\bin\Debug\nunit.framework.pdb
+C:\Users\amirs\source\repos\CodeWars2\CodeWars2\bin\Debug\nunit.framework.xml
+C:\Users\amirs\source\repos\CodeWars2\CodeWars2\obj\Debug\CodeWars2.csproj.CopyComplete
