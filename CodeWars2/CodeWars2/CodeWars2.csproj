@@ -62,6 +62,7 @@
     <Compile Include="kata7test.cs" />
     <Compile Include="kata8.cs" />
     <Compile Include="kata8test.cs" />
+    <Compile Include="kata9.cs" />
     <Compile Include="linqandllambda.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
