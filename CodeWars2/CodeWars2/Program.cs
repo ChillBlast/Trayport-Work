@@ -12,6 +12,7 @@ namespace CodeWars2
         {
             Console.WriteLine("compliment of AAAA");
             Console.WriteLine(DnaStrand.MakeComplement("AAAA"));
+            // Conflict 1
             Console.ReadKey();
         }
     }
