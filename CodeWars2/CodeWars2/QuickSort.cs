@@ -29,49 +29,48 @@ namespace CodeWars2
         //static Random rnd = new Random();
         private static int[] QuickSortFuncBack(int[] unsortedArray)
         {
-            if (unsortedArray.Length < 2) return unsortedArray;
-            List<int> sortedList = new List<int>();
-            List<int> sortedList1 = new List<int>();
-            List<int> sortedList2 = new List<int>();
-            for (int valid = 0; valid < 1; valid++)
+        if (unsortedArray.Length < 2) return unsortedArray;
+        List<int> sortedList = new List<int>();
+        List<int> sortedList1 = new List<int>();
+        List<int> sortedList2 = new List<int>();
+
+            int pivot = unsortedArray[unsortedArray.Length - 1];
+            //int pivot = unsortedArray[rnd.Next(unsortedArray.Length)];
+            //sortedList.Add(unsortedArray[unsortedArray.Length - 1]);
+            for (int i = 0; i < unsortedArray.Length-1; i++)
             {
-                int pivot = unsortedArray[unsortedArray.Length - 1];
-                //int pivot = unsortedArray[rnd.Next(unsortedArray.Length)];
-                //sortedList.Add(unsortedArray[unsortedArray.Length - 1]);
-                for (int i = 0; i < unsortedArray.Length-1; i++)
+                if (unsortedArray[unsortedArray.Length - 1] < unsortedArray[i])
                 {
-                    if (unsortedArray[unsortedArray.Length - 1] < unsortedArray[i])
-                    {
-                        sortedList1.Add(unsortedArray[i]);
-                    }
-                    else
-                    {
-                        sortedList2.Insert(0, unsortedArray[i]);
-                    }
-                }
-                sortedList.AddRange(sortedList2);
-                sortedList1.Insert(0, pivot);
-                sortedList.AddRange(sortedList1);
-                int[] sortedArray = (sortedList).ToArray();
-                //sortedList1.Clear();
-                //sortedList2.Clear();
-                if (validSort(sortedArray))
-                {
-                    return sortedArray;
+                    sortedList1.Add(unsortedArray[i]);
                 }
                 else
                 {
-                    //valid = -1;
-                    //unsortedArray = sortedArray;
-                    List<int> sortedArray1 = QuickSortFuncBack(sortedList1.ToArray()).ToList();
-                    List<int> sortedArray2 = QuickSortFuncBack(sortedList2.ToArray()).ToList();
-                    sortedArray2.AddRange(sortedArray1);
-                    return sortedArray2.ToArray();
-
+                    sortedList2.Insert(0, unsortedArray[i]);
                 }
             }
-            int[] test = new int[10];
-            return test;
+            sortedList.AddRange(sortedList2);
+            sortedList1.Insert(0, pivot);
+            sortedList.AddRange(sortedList1);
+            int[] sortedArray = (sortedList).ToArray();
+            //sortedList1.Clear();
+            //sortedList2.Clear();
+            if (validSort(sortedArray))
+            {
+                return sortedArray;
+            }
+            else
+            {
+                //valid = -1;
+                //unsortedArray = sortedArray;
+                List<int> sortedArray1 = QuickSortFuncBack(sortedList1.ToArray()).ToList();
+                List<int> sortedArray2 = QuickSortFuncBack(sortedList2.ToArray()).ToList();
+                sortedArray2.AddRange(sortedArray1);
+                return sortedArray2.ToArray();
+
+            }
+
+            //int[] test = new int[10];
+            //return test;
         }
     }
 }
