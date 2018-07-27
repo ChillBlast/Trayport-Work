@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace CodeWars2
 {
-    class Program
+    class Program1
     {
-        static void Main(string[] args)
+        static void Main1(string[] args)
         {
             Console.WriteLine("compliment of AAAA");
             Console.WriteLine(DnaStrand.MakeComplement("AAAA"));

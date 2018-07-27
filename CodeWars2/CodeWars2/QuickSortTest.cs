@@ -25,6 +25,9 @@ namespace CodeWars2
             int[] unsortedArray3 = new int[] { 0, 3, 1, 7 };
             int[] sortedArray3 = new int[] { 0, 1, 3, 7 };
             Assert.AreEqual(sortedArray3, QuickSort.QuickSortFuncFront(unsortedArray3));
+            //int[] unsortedArray3 = new int[] { 0, 3, 1, 7 };
+            //int[] sortedArray3 = new int[] { 0, 1, 3, 7 };
+            //Assert.AreEqual(sortedArray3, CodeWars2.Program1.Quicksort(unsortedArray3));
         }
 
         //[Test]
