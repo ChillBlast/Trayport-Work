@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using CodeWars2;
+using NUnit.Framework.Constraints;
 
 namespace CodeWars2
 {
@@ -24,9 +25,22 @@ namespace CodeWars2
             int[] unsortedArray3 = new int[] { 0, 3, 1, 7 };
             int[] sortedArray3 = new int[] { 0, 1, 3, 7 };
             Assert.AreEqual(sortedArray3, QuickSort.QuickSortFuncFront(unsortedArray3));
-
-
         }
+
+        //[Test]
+        //public void Test1()
+        //{
+        //    int[] unsortedArray1 = new int[100000];
+        //    for (int i = 0; i < unsortedArray1.Length; i++)
+        //    {
+        //        unsortedArray1[i] = i;
+        //    }
+
+        //    var res1 = unsortedArray1.OrderBy(i=>i);
+
+        //    var result = QuickSort.QuickSortFuncFront(unsortedArray1);
+        //}
+
     }
 }
 

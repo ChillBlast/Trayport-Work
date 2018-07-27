@@ -26,16 +26,17 @@ namespace CodeWars2
             return QuickSortFuncBack(unsortedArray);
 
         }
-
+        //static Random rnd = new Random();
         private static int[] QuickSortFuncBack(int[] unsortedArray)
         {
-            //if (unsortedArray.Length < 2) return unsortedArray;
+            if (unsortedArray.Length < 2) return unsortedArray;
             List<int> sortedList = new List<int>();
             List<int> sortedList1 = new List<int>();
             List<int> sortedList2 = new List<int>();
             for (int valid = 0; valid < 1; valid++)
             {
                 int pivot = unsortedArray[unsortedArray.Length - 1];
+                //int pivot = unsortedArray[rnd.Next(unsortedArray.Length)];
                 //sortedList.Add(unsortedArray[unsortedArray.Length - 1]);
                 for (int i = 0; i < unsortedArray.Length-1; i++)
                 {
